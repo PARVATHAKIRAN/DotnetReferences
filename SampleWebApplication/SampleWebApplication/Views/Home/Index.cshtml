@@ -1,4 +1,6 @@
-﻿@{
+﻿@model string
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -9,5 +11,6 @@
     <input type="text" id="textbox" name="name">
     <input type="submit" id="btnSubmit" name="Submit">
     <input type="button" id="btnRetrive" value="Retrive">
+    <form asp-controller="Name" asp-action="Save" method="post"/>
 
 </div>
